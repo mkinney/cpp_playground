@@ -13,12 +13,12 @@ void init_messages(std::string messages[]);
 /*
  * report how many messages are in the messages array
  */
-int messages_count(std::string messages[]);
+int messages_count(const std::string messages[]);
 
 /*
  * split a string into a messages array
  */
-void split_messages(std::string message_string, std::string messages[]);
+void split_messages(const std::string message_string, std::string messages[]);
 
 /*
  * return default messages string

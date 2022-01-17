@@ -6,7 +6,7 @@ void init_messages(std::string messages[]) {
     }
 }
 
-int messages_count(std::string messages[]) {
+int messages_count(const std::string messages[]) {
     int count = 0;
     for (int i=0; i < MAX_CANNED_MESSAGES; i++) {
         if (messages[i] != "") {
@@ -16,7 +16,7 @@ int messages_count(std::string messages[]) {
     return(count);
 }
 
-void split_messages(std::string message_string, std::string messages[]) {
+void split_messages(const std::string message_string, std::string messages[]) {
     int message_count = 0;
     size_t last = 0;
     size_t next = 0;
