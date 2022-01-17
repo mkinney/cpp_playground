@@ -29,8 +29,7 @@ void split_messages(std::string message_string, std::string messages[]) {
     messages[message_count] = message_string.substr(last);
 }
 
-std::string get_message_string() {
-    // get the message string from the array of messages
+std::string default_message_string() {
     std::string plugin_messages[MAX_CANNED_MESSAGES_PARTS];
     plugin_messages[0] = "This is one|This is two|";
     plugin_messages[1] = "This is three|This is four|";

@@ -5,7 +5,7 @@
 #include "messages.hpp"
 
 int main() {
-    std::string message_string = get_message_string();
+    std::string message_string = default_message_string();
     std::cout << "message_string:" << message_string << std::endl;
     std::string messages[MAX_CANNED_MESSAGES];
     split_messages(message_string, messages);
