@@ -1,3 +1,4 @@
+/* Copyright 2021 Mike Kinney */
 #include <cstdio>
 #include <iostream>
 #include <string>

@@ -1,9 +1,11 @@
-#include "acutest.h"
-#include "messages.hpp"
+/* Copyright 2021 Mike Kinney */
+#include "./acutest.h"
+#include "./messages.hpp"
 
 void test_default_message_string(void) {
     std::string message_string = default_message_string();
-    TEST_CHECK(message_string == "This is one|This is two|This is three|This is four|This is five|");
+    TEST_CHECK(message_string == "This is one|This is two|This is three"
+                                 "|This is four|This is five|");
 }
 
 void test_split_messages_empty(void) {

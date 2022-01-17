@@ -5,3 +5,4 @@ test_messages
 html/
 latex/
 .DS_Store
+venv/

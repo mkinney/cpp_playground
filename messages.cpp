@@ -1,3 +1,4 @@
+/* Copyright 2021 Mike Kinney */
 #include "messages.hpp"
 
 void init_messages(std::string messages[]) {

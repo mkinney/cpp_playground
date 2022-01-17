@@ -1,3 +1,8 @@
+/* Copyright 2021 Mike Kinney */
+
+#ifndef MESSAGES_HPP_
+#define MESSAGES_HPP_
+
 #include <cstdio>
 #include <iostream>
 #include <string>
@@ -24,3 +29,5 @@ void split_messages(const std::string message_string, std::string messages[]);
  * return default messages string
  */
 std::string default_message_string();
+
+#endif  // MESSAGES_HPP_

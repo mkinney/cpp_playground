@@ -15,5 +15,8 @@ doc:
 	doxygen
 	open html/index.html
 
+lint:
+	cpplint *.cpp *.hpp
+
 clean:
 	rm *.o test_messages main
