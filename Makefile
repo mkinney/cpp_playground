@@ -15,6 +15,9 @@ doc:
 	doxygen
 	open html/index.html
 
+check:
+	cppcheck --enable=all --suppress=missingIncludeSystem messages.cpp messages.hpp main.cpp
+
 lint:
 	cpplint *.cpp *.hpp
 

@@ -9,6 +9,10 @@ This repository is for experimenting with c++ code.
 `brew install doxygen`
 
 
+* install cppcheck - see https://github.com/danmar/cppcheck/
+
+`brew install cppcheck`
+
 
 * install cpplint
 

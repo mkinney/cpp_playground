@@ -6,6 +6,7 @@
 #include <cstdio>
 #include <iostream>
 #include <string>
+#include <assert.h>
 
 #define MAX_CANNED_MESSAGES_PARTS 10
 #define MAX_CANNED_MESSAGES 100
@@ -23,7 +24,7 @@ int messages_count(const std::string messages[]);
 /*
  * split a string into a messages array
  */
-void split_messages(const std::string message_string, std::string messages[]);
+void split_messages(const std::string &message_string, std::string messages[]);
 
 /*
  * return default messages string
