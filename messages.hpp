@@ -3,10 +3,11 @@
 #ifndef MESSAGES_HPP_
 #define MESSAGES_HPP_
 
+#include <assert.h>
+
 #include <cstdio>
 #include <iostream>
 #include <string>
-#include <assert.h>
 
 #define MAX_CANNED_MESSAGES_PARTS 10
 #define MAX_CANNED_MESSAGES 100

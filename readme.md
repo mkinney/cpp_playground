@@ -22,6 +22,13 @@ source venv/bin/activate
 pip install cpplint
 ```
 
+* install cpplint
+
+```
+pip install cppclean
+```
+
+
 
 * for unit testing, see https://github.com/mity/acutest
 
@@ -31,6 +38,9 @@ pip install cpplint
 There are various `make` commands:
 
 * `make test` to build and run tests
+* `make check` to run cppcheck
+* `make cppclean` to run cppclean
 * `make lint` to run cpp linter
 * `make doc` to build the docs using doxygen
+* `make all` to build, run static analyzers, and then run the tests
 
