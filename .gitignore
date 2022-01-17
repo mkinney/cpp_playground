@@ -2,3 +2,6 @@
 *.o
 main
 test_messages
+html/
+latex/
+.DS_Store

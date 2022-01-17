@@ -4,6 +4,9 @@
 
 #include "messages.hpp"
 
+/*
+ * main program
+ */
 int main() {
     std::string message_string = default_message_string();
     std::cout << "message_string:" << message_string << std::endl;
