@@ -1,11 +1,11 @@
-messages.o:
-	g++ -c messages.cpp
-
 main: main.cpp messages.o
 	g++ -o main messages.o main.cpp
 
-test: test_messages.cpp
-	g++ test_messages.cpp -o test_messages
+messages.o: messages.cpp messages.hpp
+	g++ -c messages.cpp
+
+test: test_messages.cpp messages.o
+	g++ test_messages.cpp -o test_messages messages.o
 	./test_messages
 
 clean:
