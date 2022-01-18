@@ -8,6 +8,10 @@ This repository is for experimenting with c++ code.
 
 `brew install doxygen`
 
+* install ikos (will not install on mac air)
+
+`brew install nasa-sw-vnv/core/ikos`
+
 
 * install cppcheck - see https://github.com/danmar/cppcheck/
 
@@ -25,7 +29,19 @@ pip install cpplint
 * install cpplint
 
 ```
-pip install cppclean
+pip install cpplint
+```
+
+* install lizard
+
+```
+pip install lizard
+```
+
+* install metrix++
+
+```
+pip install metrixpp
 ```
 
 
@@ -41,6 +57,8 @@ There are various `make` commands:
 * `make check` to run cppcheck
 * `make cppclean` to run cppclean
 * `make lint` to run cpp linter
+* `make metrix` to run metrix++ analyzer
+* `make lizard` to lizard code analyzer
 * `make doc` to build the docs using doxygen
 * `make all` to build, run static analyzers, and then run the tests
 

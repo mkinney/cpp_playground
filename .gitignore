@@ -6,3 +6,4 @@ html/
 latex/
 .DS_Store
 venv/
+metrixpp.db
