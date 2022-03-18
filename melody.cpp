@@ -208,6 +208,8 @@ string Melody::fromTone(const int tone) {
         retval = "D8";
     } else if (tone == NOTE_DS8) {
         retval = "DS8";
+    } else if (tone == REST) {
+        retval = "REST";
     }
     return(retval);
 }
@@ -391,6 +393,8 @@ int Melody::toTone(const string& input) {
         retval = NOTE_D8;
     } else if (input == "DS8") {
         retval = NOTE_DS8;
+    } else if (input == "REST") {
+        retval = REST;
     }
     return(retval);
 }
