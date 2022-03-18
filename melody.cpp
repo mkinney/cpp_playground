@@ -9,7 +9,7 @@ Melody::Melody() {
 string Melody::note(const pair<int, int> a_note) {
     string retval = "";
     retval = fromTone(a_note.first);
-    retval += "-";
+    retval += ",";
     retval += to_string(a_note.second);
     return(retval);
 }
@@ -19,7 +19,7 @@ string Melody::tones() {
     string tmp = "";
     for (auto & a_note:song) {
         retval += note(a_note);
-        retval += " "; // separator
+        retval += " "; // note separator
     }
     if (retval.size() > 0) {
         // remove the last character (which is an extra space or ' ')
@@ -409,7 +409,7 @@ void Melody::set(const string& input) {
         note.second = 0;
 
         // split on '-'
-        note_parts = tokenizer(token, '-');
+        note_parts = tokenizer(token, ',');
         if (note_parts.size() == 2) {
             note.first = toTone(note_parts[0]);
             note.second = stoi(note_parts[1]);
