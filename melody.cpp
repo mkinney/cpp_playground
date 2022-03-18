@@ -407,15 +407,12 @@ void Melody::set(const string& input) {
     for (auto & token:tokens) {
         note.first = 0;
         note.second = 0;
-        //cout << "token:" << token << endl;
 
         // split on '-'
         note_parts = tokenizer(token, '-');
         if (note_parts.size() == 2) {
-            //cout << "1:" << note_parts[0] << " 2:" << note_parts[1] << endl;
             note.first = toTone(note_parts[0]);
             note.second = stoi(note_parts[1]);
-            //cout << note.first << "-" << note.second << endl;
             song.push_back(note);
         }
     }
